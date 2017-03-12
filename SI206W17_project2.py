@@ -1,8 +1,8 @@
 ## SI 206 W17 - Project 2 
 
 ## COMMENT HERE WITH:
-## Your name:
-## Anyone you worked with on this project:
+## Your name: John Coleman
+## Anyone you worked with on this project: Michael Miller
 
 ## Below we have provided import statements, comments to separate out the parts of the project, instructions/hints/examples, and at the end, tests. See the PDF of instructions for more detail. 
 ## You can check out the SAMPLE206project2_caching.json for an example of what your cache file might look like.
@@ -32,7 +32,13 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 ## Part 0 -- CACHING SETUP
 
 ## Write the code to begin your caching pattern setup here.
-
+CACHE_FNAME = "206project2_caching.json"
+try:
+	cache_file = open(CACHE_FNAME,'r', encoding = 'utf-8')
+	cache_contents = cache_file.read()
+	CACHE_DICTION = json.loads(cache_contents)
+except:
+	CACHE_DICTION = {}
 
 
 
