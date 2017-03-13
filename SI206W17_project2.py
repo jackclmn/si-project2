@@ -109,6 +109,7 @@ for data in get_umsi_data():
 ## Behavior: See instructions. Should search for the input string on twitter and get results. Should check for cached data, use it if possible, and if not, cache the data retrieved.
 ## RETURN VALUE: A list of strings: A list of just the text of 5 different tweets that result from the search.
 def get_five_tweets(s):
+	#try this first
 	if 'twitter_University of Michigan' in CACHE_DICTION:
 		twitter_results = CACHE_DICTION['twitter_University of Michigan']
 	else:
