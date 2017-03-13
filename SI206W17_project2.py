@@ -71,6 +71,7 @@ def find_urls(s):
 ## Start with this page: https://www.si.umich.edu/directory?field_person_firstname_value=&field_person_lastname_value=&rid=All  
 ## End with this page: https://www.si.umich.edu/directory?field_person_firstname_value=&field_person_lastname_value=&rid=All&page=11 
 def get_umsi_data():
+	#try this first
 	if 'umsi_directory_data' in CACHE_DICTION:
 		return CACHE_DICTION['umsi_directory_data']
 	else:
